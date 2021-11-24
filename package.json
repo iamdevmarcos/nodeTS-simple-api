@@ -1,0 +1,33 @@
+{
+  "name": "nodets-simple-api",
+  "version": "1.0.0",
+  "description": "uma API simples criada com node.js e typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon -e ts,json src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamdevmarcos/nodeTS-simple-api.git"
+  },
+  "author": "marcosdev.me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamdevmarcos/nodeTS-simple-api/issues"
+  },
+  "homepage": "https://github.com/iamdevmarcos/nodeTS-simple-api#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-alpha.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.10",
+    "@types/sequelize": "^4.28.10",
+    "@types/validator": "^13.7.0"
+  }
+}
