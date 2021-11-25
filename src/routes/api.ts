@@ -11,6 +11,10 @@ router.get('/name/:name', ApiController.getName);
 
 router.post('/phrases', PhrasesController.createPhrase);
 router.get('/phrases', PhrasesController.listPhrases);
+router.get('/phrase/random', PhrasesController.randomPhrase);
+
 router.get('/phrase/:id', PhrasesController.getPhrase);
+router.put('/phrase/:id', PhrasesController.updatePhrase);
+router.delete('/phrase/:id', PhrasesController.deletePhrase);
 
 export default router;
