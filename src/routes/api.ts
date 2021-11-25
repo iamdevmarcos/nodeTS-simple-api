@@ -10,5 +10,7 @@ router.get('/random', ApiController.randomNumber);
 router.get('/name/:name', ApiController.getName);
 
 router.post('/phrases', PhrasesController.createPhrase);
+router.get('/phrases', PhrasesController.listPhrases);
+router.get('/phrase/:id', PhrasesController.getPhrase);
 
 export default router;

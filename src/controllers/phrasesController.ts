@@ -12,3 +12,19 @@ export const createPhrase = async (req: Request, res: Response) => {
         txt
     });
 }
+
+export const listPhrases = async (req: Request, res: Response) => {
+    const list = await Phrase.findAll();
+    res.json({list});
+}
+
+export const getPhrase = async (req: Request, res: Response) => {
+    const { id } = req.params;
+    let phrase = await Phrase.findByPk(id);
+
+    if(phrase) {
+        res.json({ phrase });
+    } else {
+        res.json({error: "Phrase not found..."});
+    }
+}
