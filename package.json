@@ -1,7 +1,7 @@
 {
   "name": "nodets-simple-api",
   "version": "1.0.0",
-  "description": "uma API simples criada com node.js e typescript",
+  "description": "a simple API created with Node.js and Express",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
